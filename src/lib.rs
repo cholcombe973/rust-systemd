@@ -125,16 +125,16 @@ impl Object {
 /// Unit status returned from systemd.
 #[derive(RustcDecodable,RustcEncodable,Debug)]
 pub struct UnitStatus {
-    name: String,
-    description: String,
-    load_state: String,
-    active_state: String,
-    sub_state: String,
-    followed: String,
-    path: ObjectPath,
-    job_id: u32,
-    job_type: String,
-    job_path: ObjectPath
+    pub name: String,
+    pub description: String,
+    pub load_state: String,
+    pub active_state: String,
+    pub sub_state: String,
+    pub followed: String,
+    pub path: ObjectPath,
+    pub job_id: u32,
+    pub job_type: String,
+    pub job_path: ObjectPath
 }
 
 
